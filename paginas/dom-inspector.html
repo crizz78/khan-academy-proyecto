@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inspector del DOM - Portafolio</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <h1>Visualizador de Estructura del DOM</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="rana.html">Rana</a></li>
+        <li><a href="dientes.html">Dientes de conejo</a></li>
+        <li><a href="cena.html">¿Qué hay de cena?</a></li>
+        <li><a href="dia-nevado.html">Día nevado soleado</a></li>
+        <li><a href="muneco.html">Muñeco de nieve</a></li>
+        <li><a href="dom-inspector.html" class="active">Árbol DOM</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Estructura del DOM de la Página Principal (index.html)</h2>
+      <div class="tree">
+        <ul>
+          <li>
+            <span class="node">&lt;html&gt;</span>
+            <ul>
+              <li>
+                <span class="node">&lt;head&gt;</span>
+                <ul>
+                  <li><span class="node-leaf">&lt;meta charset="UTF-8"&gt;</span></li>
+                  <li><span class="node-leaf">&lt;title&gt;</span></li>
+                  <li><span class="node-leaf">&lt;link rel="stylesheet"&gt;</span></li>
+                </ul>
+              </li>
+              <li>
+                <span class="node">&lt;body&gt;</span>
+                <ul>
+                  <li>
+                    <span class="node">&lt;header&gt;</span>
+                    <ul>
+                      <li><span class="node-leaf">&lt;h1&gt;</span></li>
+                      <li>
+                        <span class="node">&lt;nav&gt;</span>
+                        <ul>
+                          <li><span class="node-leaf">&lt;ul&gt; / &lt;li&gt; / &lt;a&gt;</span></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="node">&lt;main&gt;</span>
+                    <ul>
+                      <li>
+                        <span class="node">&lt;section class="info-section"&gt;</span>
+                        <ul>
+                          <li><span class="node-leaf">&lt;article class="card"&gt; (Canvas Teórico)</span></li>
+                          <li><span class="node-leaf">&lt;article class="card"&gt; (p5.js Teórico)</span></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="node">&lt;footer&gt;</span>
+                    <ul>
+                      <li><span class="node-leaf">&lt;p&gt;</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Estructura del DOM de las Páginas de Dibujos (ej. rana.html)</h2>
+      <div class="tree">
+        <ul>
+          <li>
+            <span class="node">&lt;html&gt;</span>
+            <ul>
+              <li>
+                <span class="node">&lt;head&gt;</span>
+                <ul>
+                  <li><span class="node-leaf">&lt;meta charset="UTF-8"&gt;</span></li>
+                  <li><span class="node-leaf">&lt;title&gt;</span></li>
+                  <li><span class="node-leaf">&lt;link rel="stylesheet"&gt;</span></li>
+                  <li><span class="node-leaf">&lt;script src="p5.min.js"&gt;</span></li>
+                  <li><span class="node-leaf">&lt;script src="dibujo.js"&gt;</span></li>
+                </ul>
+              </li>
+              <li>
+                <span class="node">&lt;body&gt;</span>
+                <ul>
+                  <li>
+                    <span class="node">&lt;header&gt;</span>
+                    <ul>
+                      <li><span class="node-leaf">&lt;h1&gt;</span></li>
+                      <li><span class="node-leaf">&lt;nav&gt;</span></li>
