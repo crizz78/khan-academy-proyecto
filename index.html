@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Khan Academy - p5.js</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Portafolio de Gráficos e Interactividad</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="paginas/rana.html">Rana</a></li>
+        <li><a href="paginas/dientes.html">Dientes de conejo</a></li>
+        <li><a href="paginas/cena.html">¿Qué hay de cena?</a></li>
+        <li><a href="paginas/dia-nevado.html">Día nevado soleado</a></li>
+        <li><a href="paginas/muneco.html">Muñeco de nieve</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="info-section">
+      <h2>Sección Informativa Teórica</h2>
+      
+      <article class="card">
+        <h3>1. La etiqueta HTML <code>&lt;canvas&gt;</code> y el contexto 2D</h3>
+        <p>
+          La etiqueta <code>&lt;canvas&gt;</code> de HTML5 funciona como un lienzo o mapa de bits en blanco donde se pueden renderizar gráficos y animaciones mediante JavaScript.
+        </p>
+        <p>
+          A diferencia de los elementos HTML estándar, el lienzo no tiene capacidad de dibujo propia. Para interactuar con él, se debe acceder a su <strong>contexto de renderizado 2D</strong> (usando <code>canvas.getContext('2d')</code> en JavaScript puro), el cual proporciona métodos y funciones para dibujar formas geométricas (rectángulos, arcos, líneas), definir estilos de relleno y trazo, manipular imágenes y procesar transformaciones matriciales.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>2. Fundamentos de la librería p5.js</h3>
+        <p>
+          <strong>p5.js</strong> es una biblioteca de JavaScript diseñada para la programación creativa. Simplifica el uso y la manipulación de <code>&lt;canvas&gt;</code> al abstraer la sintaxis compleja del API nativo en funciones intuitivas.
+        </p>
+        <p>
+          La arquitectura principal de una aplicación en p5.js se estructura en torno a dos funciones esenciales:
+        </p>
+        <ul>
+          <li><code>setup()</code>: Se ejecuta exactamente una vez al iniciar la aplicación. Se utiliza para preparar el entorno, definir el tamaño del lienzo con <code>createCanvas(ancho, alto)</code> e inicializar variables.</li>
+          <li><code>draw()</code>: Se ejecuta en un bucle continuo (aproximadamente a 60 cuadros por segundo). Dentro de esta función se colocan las instrucciones de renderizado, animaciones e interacciones en tiempo real.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Portafolio de Proyectos Khan Academy / p5.js</p>
+  </footer>
+</body>
+</html>

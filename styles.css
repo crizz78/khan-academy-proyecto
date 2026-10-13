@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #34495e;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+nav a:hover, nav a.active {
+  background-color: #1abc9c;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.info-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: #1abc9c;
+  margin-bottom: 0.8rem;
+}
+
+.card code {
+  background: #eee;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.canvas-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#canvas-container {
+  margin-top: 1rem;
+  border: 2px solid #2c3e50;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  margin-top: 2rem;
+}
